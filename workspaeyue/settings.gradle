@@ -1,0 +1,1 @@
+include ':app', ':fresco_demo1', ':reflectdemo', ':buttongreenevent', ':greendaowork', ':rxretrofit', ':myfirstp', ':work_demo04'

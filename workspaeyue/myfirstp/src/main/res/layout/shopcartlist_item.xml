@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- 主页面 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_shop_goods"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/checkboxbg"
+            android:button="@null"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            />
+        <!--有阴影的布局-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:background="@drawable/item_shape">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image_shop"
+                fresco:roundWithOverlayColor="#fff"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp" />
+
+
+            <TextView
+                android:id="@+id/text_shop_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/image_shop"
+                android:text="哈哈哈好好好好好好哈哈哈哈哈哈好好"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_shop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@+id/image_shop"
+                android:fontFamily="DIN Alternate"
+                android:text="55"
+                android:textColor="#ff0606"
+                android:textSize="14sp" />
+
+            <com.example.AddSubLayout
+                android:id="@+id/addsub"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            </com.example.AddSubLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

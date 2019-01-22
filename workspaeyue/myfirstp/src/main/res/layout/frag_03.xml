@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_shopcart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/nR"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        >
+
+        <CheckBox
+            android:id="@+id/check_allCart"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/checkboxbg"
+            android:button="@null"
+            android:layout_marginLeft="10dp"
+             />
+        <TextView
+            android:id="@+id/quanxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:layout_toRightOf="@+id/check_allCart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/heji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/quanxuan"
+            android:text="合计:"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/heji"
+            android:layout_marginLeft="10dp"
+            android:text="0.0"
+            android:textColor="#ff0606"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_colose"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="#ff5e70"
+            android:layout_centerVertical="true"
+            android:text="去结算"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

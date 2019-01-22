@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_shape"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageviewg1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/textviewg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:text="梦特娇MONTFUT女士"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/textviewg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="14sp"
+        android:text="￥878.00"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>
